@@ -1,0 +1,47 @@
+# Secrets — NEVER commit
+.env
+*.pem
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Data & vector store
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+vector_store_data/
+*.bin
+*.pt
+*.onnx
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Airflow
+airflow.db
+airflow/logs/
