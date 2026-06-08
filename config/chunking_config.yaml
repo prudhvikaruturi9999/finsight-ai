@@ -1,0 +1,24 @@
+hierarchical:
+  parent_chunk_size: 1500   # tokens
+  child_chunk_size: 300     # tokens
+  overlap_pct: 0.15         # 15% overlap on child chunks
+
+pdf:
+  strategy: hierarchical
+  ocr_confidence_threshold: 0.85
+  min_dpi: 150
+
+docx:
+  strategy: hierarchical
+
+excel:
+  strategy: row_level
+  rows_per_chunk: 50
+
+audio:
+  strategy: utterance_level
+
+api_payload:
+  strategy: recursive_character
+  chunk_size: 500
+  overlap: 50
